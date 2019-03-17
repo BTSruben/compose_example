@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    image: ruben/flask-redis:1.0
+    ports:
+      - 5000:5000
+
+  redis:
+    image: redis:4.0.11-alpine
+
